@@ -185,12 +185,24 @@ Vemos que hay parte de View en JobServlet, por eso creamos archivo jsp.
 
    ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/bbec3741-4cbd-46d6-811d-db85f748b6f5)
 
-## FUNCIONAMIENTO SERVLET
+## FUNCIONAMIENTO SERVLET (Mandar "algo" a la vista)
 
 1) Extraemos del modelo (Dao) la información: Lista
+   
+2) Con request.setAtributte seleccionamos qué vamos a mandar a la vista ("mensaje",cosa_para_mandar)
 
-2) Mandamos la lista a la vista mediante la clase RequestDispatcher que sale del request, con ello mandamos la información a la vista.
+3) Mandamos la lista a la vista mediante la clase RequestDispatcher que sale del request, con ello mandamos la información a la vista.
    
-3) Darle el paso a View con el método forward del "rd" mandando el request y response. Asimismo tenemos que colocar el ServletExcepetion porque el forward es un checkedException.
+4) Darle el paso a View con el método forward del "rd" mandando el request y response. Asimismo tenemos que colocar el ServletExcepetion porque el forward es un checkedException.
    
-   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/0e72781a-8c8c-435f-aaf4-d7a510fabd8a)
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/8d14291e-0c3a-4344-b828-ec44e637f8e2)
+
+## Captura del "algo" de la Vista
+
+1) Importar el Bean (lo puede hacer solo la maquina, autocorección).
+2) Crear el ArrayList, pero tenemos que castear lo enviado. Además, lo enviado lo catalogamos con el mensaje que pusimos a la hora de enviar.
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/7dbcf419-d213-4eb9-99f4-e3d589d076a3)
+
+
+
+
