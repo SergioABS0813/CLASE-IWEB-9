@@ -156,6 +156,41 @@ El Bean es una representación de una tabla de Base de Datos. Es por ello que co
 
 Por eso Job es un Bean.
 
+## Método que retorna Arraylist
 
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/43c9141c-0afb-45f2-8e9b-51cb002ee786)
 
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/7a23d60b-fd77-4663-b83a-95b6e309ead3)
 
+## FUNCIONAMIENTO BEAN-SERVLET-DAO
+
+1) Bean es Job 
+
+2) 
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/7bbce121-3d4f-4373-83ed-163e3e0ee98b)
+
+3) 
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/f87cdba7-4811-4e6d-a8f0-5d7485e524ae)
+
+Vemos que hay parte de View en JobServlet, por eso creamos archivo jsp.
+
+## Creación JSP
+1) Se creará una carpeta por cada tabla o espacio de trabajo DENTRO DE WEBAPP
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/4800866b-7c00-436a-a02f-9402cf341688)
+
+2) Crear el archivo jsp dentro de la carpeta creada
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/bbec3741-4cbd-46d6-811d-db85f748b6f5)
+
+## FUNCIONAMIENTO SERVLET
+
+1) Extraemos del modelo (Dao) la información: Lista
+
+2) Mandamos la lista a la vista mediante la clase RequestDispatcher que sale del request, con ello mandamos la información a la vista.
+   
+3) Darle el paso a View con el método forward del "rd" mandando el request y response. Asimismo tenemos que colocar el ServletExcepetion porque el forward es un checkedException.
+   
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/0e72781a-8c8c-435f-aaf4-d7a510fabd8a)
