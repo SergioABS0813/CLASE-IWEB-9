@@ -116,12 +116,45 @@ El problema ahora es si queremos una interfaz más amigable, tendríamos que cod
 
 ## -------------------- MVC --------------------
 
+MVC (Model-View-Controller) es un patrón de diseño que separa la aplicación en 3 capas para una mejor organización.
 
+Las 3 capas son:
 
+1) Modelo: Representa todo lo relacionado a acceso de datos (para nuestro proyecto sería todo lo relacionado a Base de Datos). (DAOS, BEANS y DTO) 
+2) Vista: Contiene la parte visual de la pag web. (JSP)
+3) Controlador: Contiene la lógica de la aplicación. (SERVLET)
 
+## Creación de paquetes (Package)
 
+1)
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/e2e2d1ad-eed1-46f1-bac8-10fcabfcfe5f)
 
+2) Luego escogemos el nombre del package (carpeta): Daos, Beans, Servlets y View. View ya está por default como WebApp
 
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/b5cace45-d0e8-4508-82a3-a88d5e47c93a)
+
+3) Colocamos cada clase creada (Daos, Beans, Jsp, Servlets) en su respectiva capa (package)
+   
+## Justificación del uso de los Beans
+
+Tenemos el JobDao (procesamiento en base a Base de Datos):
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/d0dc57fc-ff56-448f-8325-60b13ca2fcae)
+
+Sin embargo, vemos que el JobServlet necesita de una lista 
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/fdf0deb5-19ec-434e-9e15-c887f8da058b)
+
+Es por ello, que el envío de datos (retornar valores) del DAO hacia el SERVLET (de su respectiva tabla) será el BEAN.
+
+## Beans
+Sirven para poder enviar o retornar algo del Dao hacia el Servlet.
+
+El Bean es una representación de una tabla de Base de Datos. Es por ello que como atributos debería tener todas las columnas que tiene una tabla en la Base de Datos.
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/932ce8ba-c78b-411c-92e7-151d971043cd)
+
+Por eso Job es un Bean.
 
 
 
