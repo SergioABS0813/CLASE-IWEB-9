@@ -203,6 +203,27 @@ Vemos que hay parte de View en JobServlet, por eso creamos archivo jsp.
 2) Crear el ArrayList, pero tenemos que castear lo enviado. Además, lo enviado lo catalogamos con el mensaje que pusimos a la hora de enviar.
    ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/7dbcf419-d213-4eb9-99f4-e3d589d076a3)
 
+## Impresión en HTML
+
+Para poder imprimir desde Java a HTML debemos poner entre los scritles el signo igual "<%= %>". 
+
+No es recomendable escribir comentarios al costado de los <td> y los <tr> porque también se mezclan con el código.
+
+< tr > : sirve para trabajar en una fila
+   
+< td > : sirve para trabajar en columna
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/0ff62224-b21a-436f-bfc6-9128335381ed)
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/5bf54521-ef7b-44b6-ab47-60dd73ba4d8a)
+
+
+
+
+
+
+
+
 
 
 
