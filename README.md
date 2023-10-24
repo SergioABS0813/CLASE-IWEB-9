@@ -102,7 +102,7 @@ Ejemplo del RESPONSE:
 
   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/7ba9ba81-15f2-4eb1-bdb1-f67601f884fa)
 
-## Creación de Servlet que liste todos los trabajos
+## Creación de Servlet que liste todos los trabajos (EJERCICIO)
 
 1) Creamos la clase Job (modelado de la tabla como clase) y colocamos los Getters y Setters a sus atributos private
    
@@ -112,7 +112,7 @@ Ejemplo del RESPONSE:
    
    ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/4c0f660d-44ec-46cc-8b22-a926efed7305)
 
-El problema ahora es si queremos una interfaz más amigable, tendríamos que codear HTML, pero en strings (no agradable), por lo que para ello se empleará MVC.
+El problema ahora es si queremos una interfaz más amigable, tendríamos que codear HTML, pero en 1 solo string (no agradable), por lo que para ello se empleará MVC.
 
 ## -------------------- MVC --------------------
 
