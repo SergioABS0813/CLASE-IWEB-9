@@ -253,4 +253,14 @@ Diapositivas Stuardo clase 9.2 IWEB
 
    ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/339767e6-e0ff-4b48-8261-3046d6b7a906)
 
- 
+## Servlet que sea el Index (Main)
+
+Escogemos como index el Servlet que no tiene value
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/2ac054c9-2646-442c-a5a7-a893e3860a6d)
+
+## Otra forma de recepción de parámetro del Servlet al jsp
+La ventaja de la primera forma es que puedes asignarle otro nombre a la variable a la que se asignará lo enviado. En la segunda forma es más legible pero se trabajará con el mismo nombre de la variable. 
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/66790557-837e-4b1c-bce0-eee0062ca428)
+
