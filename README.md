@@ -249,5 +249,8 @@ Ahora, podemos ver full código HTML debido a que el jsp (combinación entre Jav
 
 Diapositivas Stuardo clase 9.2 IWEB
 
+## Actualizaciones JSP
 
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/339767e6-e0ff-4b48-8261-3046d6b7a906)
 
+ 
