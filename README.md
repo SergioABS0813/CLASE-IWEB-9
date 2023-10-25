@@ -86,11 +86,11 @@ protocolo que tiene métodos POST, GET, DELETE, PUT y HEAD. En IWEB solo veremos
 
 Todos los FORMULARIOS son POST por lo general.
 
-La búsqueda por url es GET, igualmente los botones que emplean href usan GET.
+La búsqueda por url es GET, igualmente los botones que emplean href usan GET. Sirve para solicitar al servidor un recurso y obtenerlos (HTML, JPG, PDF,etc)
 
   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/c56fe4ac-05e3-42d4-a4ff-098769f340ab)
 
-Es por ello que la interfaz de los Servlets se hará en el método GET para las url. Cuando tengamos formularios serán para el método POST en el respectivo Servlet.
+Es por ello que la interfaz de los Servlets se hará en el método GET para las url. Cuando tengamos formularios serán para el método POST (doPost) en el respectivo Servlet.
 
 REQUEST: Es lo enviado por el usuario (Ingreso de url). En base a ello, podemos extraer información de la propia url
 
@@ -101,6 +101,11 @@ RESPONSE: Respuesta que será enviada mediante el server Tomcat (Lo que se mande
 Ejemplo del RESPONSE:
 
   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/7ba9ba81-15f2-4eb1-bdb1-f67601f884fa)
+
+## URL Estructura
+De toda la url lo que esté después del ? serán parámetros y están separados por & 
+
+Ejemplo: ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/27c31790-2264-46fc-b298-a14c6beaf335)
 
 ## Creación de Servlet que liste todos los trabajos (EJERCICIO)
 
@@ -197,11 +202,13 @@ Vemos que hay parte de View en JobServlet, por eso creamos archivo jsp.
    
    ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/8d14291e-0c3a-4344-b828-ec44e637f8e2)
 
-## Captura del "algo" de la Vista
+## Recepción de "algo" de la vista mandada por el Servlet
 
 1) Importar el Bean (lo puede hacer solo la maquina, autocorección).
 2) Crear el ArrayList, pero tenemos que castear lo enviado. Además, lo enviado lo catalogamos con el mensaje que pusimos a la hora de enviar.
    ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/7dbcf419-d213-4eb9-99f4-e3d589d076a3)
+
+   Con el Request.getAtributte("mensaje") nosostros recepcionamos algo enviado por el Servlet, en este caso casteamos a Arraylist.
 
 ## Impresión en HTML
 
@@ -218,12 +225,29 @@ No es recomendable escribir comentarios al costado de los <td> y los <tr> porque
    ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/5bf54521-ef7b-44b6-ab47-60dd73ba4d8a)
 
 
+Explicación funcionalidades sacadas de Bootstrap:
 
+en class = "table table-stripted mt-3". 
 
+table-stripted y mt-3 son parámetros que cambian la tabla. Se colocaran los parámetros de esa forma (hacia la derecha) sin quitar la primera palabra "table".
 
+"table-stripted" pinta una fila sí y la siguiente no, suesivamente.
 
+"mt-3" significa margin-top 3
 
+Con "table-primary" es asignarle un color a una fila. Se sobreescribe este color sobre el ya dispueto por el "table-stripted"
 
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/7ebba1cd-1323-4be1-8c2c-236ac0d13372)
+
+Resultado final:
+
+   ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/6a850d6e-4d60-44e5-8d30-435a50732b89)
+
+Ahora, podemos ver full código HTML debido a que el jsp (combinación entre Java y HTML) cuando pasa por el servidor Tomcat, lo convierte en full HTML y luego esto es enviado al usuario para que vea dicha interfaz web.
+
+## Servlet a la mano (Crear Servlets sin necesidad de emplear método arcaico)
+
+Diapositivas Stuardo clase 9.2 IWEB
 
 
 
