@@ -196,7 +196,7 @@ Vemos que hay parte de View en JobServlet, por eso creamos archivo jsp.
    
 2) Con request.setAtributte seleccionamos qué vamos a mandar a la vista ("mensaje",cosa_para_mandar)
 
-3) Mandamos la lista a la vista mediante la clase RequestDispatcher que sale del request, con ello mandamos la información a la vista.
+3) RequestDistpacher sirve para que vea esa vista. (redirije a esa vista)
    
 4) Darle el paso a View con el método forward del "rd" mandando el request y response. Asimismo tenemos que colocar el ServletExcepetion porque el forward es un checkedException.
    
