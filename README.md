@@ -260,7 +260,14 @@ Escogemos como index el Servlet que no tiene value
    ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/2ac054c9-2646-442c-a5a7-a893e3860a6d)
 
 ## Otra forma de recepción de parámetro del Servlet al jsp
-La ventaja de la primera forma es que puedes asignarle otro nombre a la variable a la que se asignará lo enviado. En la segunda forma es más legible pero se trabajará con el mismo nombre de la variable. 
+La ventaja de la primera forma es que puedes asignarle otro nombre a la variable a la que se asignará lo enviado. En la segunda forma es más legible pero se trabajará con el mismo nombre de la variable. (FALTA IMAGEN DEL REQUEST) 
 
    ![image](https://github.com/SergioABS0813/CLASE-IWEB-9/assets/134556600/66790557-837e-4b1c-bce0-eee0062ca428)
 
+## Funcionamiento de la recepción por <jsp:usebean>
+
+El id es el mensaje que dejamos en el setAttribute en el Servlet respectivo.
+
+El type es el tipo de dato de la variable que estamos mandando en el setAtribute
+
+scope es por DÓNDE lo enviamos, siempre por request.
